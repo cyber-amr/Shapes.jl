@@ -8,7 +8,7 @@ makedocs(;
     authors="Amr <amr@programmer.net>",
     sitename="NShapes.jl",
     format=Documenter.HTML(;
-        canonical="https://spirit-x64.github.io/NShapes.jl",
+        canonical="https://cyber-amr.github.io/NShapes.jl",
         edit_link="main",
         assets=["assets/favicon.ico"],
     ),
@@ -18,6 +18,6 @@ makedocs(;
 )
 
 deploydocs(;
-    repo="github.com/spirit-x64/NShapes.jl",
+    repo="github.com/cyber-amr/NShapes.jl",
     devbranch="main",
 )
