@@ -18,9 +18,6 @@
     <a target="_blank" href="https://spirit-x64.github.io/NShapes.jl/stable/"><img src="https://img.shields.io/badge/docs-stable-blue.svg" alt="Stable" /></a>
     <a target="_blank" href="https://spirit-x64.github.io/NShapes.jl/dev/"><img src="https://img.shields.io/badge/docs-dev-blue.svg" alt="Dev" /></a>
   </p>
-  <p>
-    <a target="_blank" href="https://discord.gg/cST4tkAMy6"><img src="https://img.shields.io/discord/1266889650987860009?color=060033&logo=discord&logoColor=white" alt="Spirit's discord server" /></a>
-  </p>
   <p>Geometric calculations and shape drawing in Julia</p>
   <br />
 </div>
