@@ -5,7 +5,7 @@ DocMeta.setdocmeta!(NShapes, :DocTestSetup, :(using NShapes); recursive=true)
 
 makedocs(;
     modules=[NShapes],
-    authors="Spirit <spirit@programmer.net>",
+    authors="Amr <amr@programmer.net>",
     sitename="NShapes.jl",
     format=Documenter.HTML(;
         canonical="https://spirit-x64.github.io/NShapes.jl",

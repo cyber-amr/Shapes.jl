@@ -1,6 +1,6 @@
 name = "NShapes"
 uuid = "97e3950c-66f8-4045-a0e7-438c70f7ae40"
-authors = ["Spirit <spirit@programmer.net>"]
+authors = ["Amr <amr@programmer.net>"]
 repo = "https://github.com/spirit-x64/NShapes.jl.git"
 version = "1.0.0-DEV"
 
