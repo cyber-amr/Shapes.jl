@@ -1,7 +1,7 @@
 <!-- Markdown link & img dfn's -->
 [license]: LICENSE
 
-# NShapes.jl
+# Shapes.jl
 > Simplify your geometry-related tasks with this versatile Julia package. providing tools for defining shapes of N-dimension and performing essential calculations in real-time.
 
 <div align="center">
@@ -10,13 +10,13 @@
     <a target="_blank" href="https://julialang.org/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Julia_Programming_Language_Logo.svg/320px-Julia_Programming_Language_Logo.svg.png" alt="Julia Programming Language Logo" /></a>
   </p>
   <p>
-    <a target="_blank" href="https://github.com/cyber-amr/NShapes.jl/actions/workflows/CI.yml?query=branch%3Amain"><img src="https://github.com/cyber-amr/NShapes.jl/actions/workflows/CI.yml/badge.svg?branch=main" alt="Build Status" /></a>
-    <a target="_blank" href="https://JuliaCI.github.io/NanosoldierReports/pkgeval_badges/N/NShapes.html"><img src="https://JuliaCI.github.io/NanosoldierReports/pkgeval_badges/N/NShapes.svg" alt="PkgEval" /></a>
+    <a target="_blank" href="https://github.com/cyber-amr/Shapes.jl/actions/workflows/CI.yml?query=branch%3Amain"><img src="https://github.com/cyber-amr/Shapes.jl/actions/workflows/CI.yml/badge.svg?branch=main" alt="Build Status" /></a>
+    <a target="_blank" href="https://JuliaCI.github.io/NanosoldierReports/pkgeval_badges/S/Shapes.html"><img src="https://JuliaCI.github.io/NanosoldierReports/pkgeval_badges/S/Shapes.svg" alt="PkgEval" /></a>
     <a target="_blank" href="https://github.com/JuliaTesting/Aqua.jl"><img src="https://raw.githubusercontent.com/JuliaTesting/Aqua.jl/master/badge.svg" alt="Aqua" /></a>
   </p>
   <p>
-    <a target="_blank" href="https://cyber-amr.github.io/NShapes.jl/stable/"><img src="https://img.shields.io/badge/docs-stable-blue.svg" alt="Stable" /></a>
-    <a target="_blank" href="https://cyber-amr.github.io/NShapes.jl/dev/"><img src="https://img.shields.io/badge/docs-dev-blue.svg" alt="Dev" /></a>
+    <a target="_blank" href="https://cyber-amr.github.io/Shapes.jl/stable/"><img src="https://img.shields.io/badge/docs-stable-blue.svg" alt="Stable" /></a>
+    <a target="_blank" href="https://cyber-amr.github.io/Shapes.jl/dev/"><img src="https://img.shields.io/badge/docs-dev-blue.svg" alt="Dev" /></a>
   </p>
   <p>Geometric calculations and shape drawing in Julia</p>
   <br />
@@ -28,7 +28,7 @@
 
 ## Installation
 ```julia
-using Pkg; Pkg.add(url="https://github.com/cyber-amr/NShapes.jl")
+using Pkg; Pkg.add(url="https://github.com/cyber-amr/Shapes.jl")
 ```
 
 ## License

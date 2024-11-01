@@ -1,14 +1,14 @@
-using NShapes
+using Shapes
 using Documenter
 
-DocMeta.setdocmeta!(NShapes, :DocTestSetup, :(using NShapes); recursive=true)
+DocMeta.setdocmeta!(Shapes, :DocTestSetup, :(using Shapes); recursive=true)
 
 makedocs(;
-    modules=[NShapes],
+    modules=[Shapes],
     authors="Amr <amr@programmer.net>",
-    sitename="NShapes.jl",
+    sitename="Shapes.jl",
     format=Documenter.HTML(;
-        canonical="https://cyber-amr.github.io/NShapes.jl",
+        canonical="https://cyber-amr.github.io/Shapes.jl",
         edit_link="main",
         assets=["assets/favicon.ico"],
     ),
@@ -18,6 +18,6 @@ makedocs(;
 )
 
 deploydocs(;
-    repo="github.com/cyber-amr/NShapes.jl",
+    repo="github.com/cyber-amr/Shapes.jl",
     devbranch="main",
 )

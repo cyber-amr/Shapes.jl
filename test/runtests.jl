@@ -1,16 +1,16 @@
 total_time = time()
 
-using NShapes
+using Shapes
 using Test
 using Aqua
 
 println("loading dependencies took $(time() - total_time) seconds")
 
-@testset "NShapes.jl" begin
+@testset "Shapes.jl" begin
     println("Testing Code quality (Aqua.jl)")
     aqua_time = time()
     @testset "Code quality (Aqua.jl)" begin
-        Aqua.test_all(NShapes; unbound_args=false)
+        Aqua.test_all(Shapes; unbound_args=false)
     end
     println("Code quality tests took $(time() - aqua_time) seconds")
 

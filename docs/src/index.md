@@ -1,8 +1,8 @@
 ```@meta
-CurrentModule = NShapes
+CurrentModule = Shapes
 ```
 
-# NShapes
+# Shapes
 Simplify your geometry-related tasks with this versatile Julia package. providing tools for defining shapes of N-dimension and performing essential calculations in real-time.
 
 
@@ -13,5 +13,5 @@ Simplify your geometry-related tasks with this versatile Julia package. providin
 ```
 
 ```@autodocs
-Modules = [NShapes]
+Modules = [Shapes]
 ```

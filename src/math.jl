@@ -1,5 +1,5 @@
 #
-# Math implementations for NShape.jl
+# Math implementations for Shape.jl
 #
 
 # distance²(Δ)

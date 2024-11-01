@@ -29,7 +29,7 @@ for D ∈ 1:4
     push!(p_non_collinear, ntuple(i -> i, D))
 
     for i ∈ keys(linears)
-        L, l = getproperty(NShapes, i), getfield(linears, i)
+        L, l = getproperty(Shapes, i), getfield(linears, i)
 
         push!(l.original, L(p1[D], p2[D]))
 
@@ -64,7 +64,7 @@ end
 
 @testset "construction" begin
     for i ∈ keys(linears)
-        L, l = getproperty(NShapes, i), getfield(linears, i).original[2]
+        L, l = getproperty(Shapes, i), getfield(linears, i).original[2]
 
         @test L((), ()) isa L{0,Union{}}
         @test l isa L{2,Int}
@@ -81,7 +81,7 @@ end
 
 @testset "Indexing and Iteration" begin
     for i ∈ keys(linears)
-        L, l = getproperty(NShapes, i), getfield(linears, i).original[2]
+        L, l = getproperty(Shapes, i), getfield(linears, i).original[2]
 
         @test l[1] === p1[2]
         @test l[2] === p2[2]
@@ -95,7 +95,7 @@ end
 
 @testset "conversion" begin
     for i ∈ keys(linears)
-        L, l = getproperty(NShapes, i), getfield(linears, i).original[2]
+        L, l = getproperty(Shapes, i), getfield(linears, i).original[2]
 
         @test convert(L{2,Int}, l) === l
         @test convert(L{2,Float64}, l) isa L{2,Float64}
@@ -113,7 +113,7 @@ end
 
 @testset "in(Point, Linear) - ∈ and ∉ operators" begin
     for i ∈ keys(linears)
-        L, l = getproperty(NShapes, i), getfield(linears, i)
+        L, l = getproperty(Shapes, i), getfield(linears, i)
 
         @test () ∈ L((), ()) # 0D case
 
@@ -147,7 +147,7 @@ end
 
 @testset "equality" begin
     for i ∈ keys(linears)
-        L, l = getproperty(NShapes, i), getfield(linears, i)
+        L, l = getproperty(Shapes, i), getfield(linears, i)
 
         @test L((), ()) == L((), ())
 
@@ -187,7 +187,7 @@ end
 
 @testset "distance(Linear)" begin
     for i ∈ keys(linears)
-        L = getproperty(NShapes, i)
+        L = getproperty(Shapes, i)
         @test distance(L((), ())) == 0
     end
 
@@ -200,7 +200,7 @@ end
 
 @testset "isdegenerate(Linear)" begin
     for i ∈ keys(linears)
-        L, l = getproperty(NShapes, i), getfield(linears, i)
+        L, l = getproperty(Shapes, i), getfield(linears, i)
 
         @test isdegenerate(L((), ())) # 0D case
 
@@ -216,7 +216,7 @@ end
 
 @testset "isparallel(Linear, Linear)" begin
     for i ∈ keys(linears)
-        L, l = getproperty(NShapes, i), getfield(linears, i)
+        L, l = getproperty(Shapes, i), getfield(linears, i)
 
         @test isparallel(L((), ()), L((), ())) # 0D case
 
@@ -234,7 +234,7 @@ end
 
 @testset "iscollinear(Linear, Linear)" begin
     for i ∈ keys(linears)
-        L, l = getproperty(NShapes, i), getfield(linears, i)
+        L, l = getproperty(Shapes, i), getfield(linears, i)
 
         @test iscollinear(L((), ()), L((), ())) # 0D case
 
