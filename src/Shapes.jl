@@ -1,7 +1,5 @@
 module Shapes
 
-# TODO: support some level of curves, or maybe Swept Shapes
-
 include("./math.jl")
 
 include("./Linear.jl")
