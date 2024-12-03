@@ -109,6 +109,7 @@ Queries
 ├── iscollinear(Vector, Vector)
 ├── iscollinear(Point, Point, Point)
 ├── isparallel(Linear, Linear)
+├── isskew(Linear, Linear)
 ├── isconvex(Shape)
 ├── isregular(Shape)
 ├── isclockwise(Shape{2})
