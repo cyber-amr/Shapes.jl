@@ -56,7 +56,7 @@ for D ∈ 1:4
         push!(l.start_perpendicular, L(l.perpendicular[D].point1 .- 1, l.perpendicular[D].point2 .- 1))
         push!(l.end_perpendicular, L(l.perpendicular[D].point1 .+ 1, l.perpendicular[D].point2 .+ 1))
         push!(l.before_perpendicular, L(l.perpendicular[D].point1 .- 2, l.perpendicular[D].point2 .- 2))
-        push!(l.after_perpendicular, L(l.perpendicular[D].point1 .+ 2, l.perpendicular[D].point2 .+ 2))
+        push!(l.after_perpendicular, L(l.perpendicular[D].point1 .+ 1.5, l.perpendicular[D].point2 .+ 1.5))
 
         push!(l.contained, L(p1[D] .+ 0.5, p2[D] .- 0.5))
     end
