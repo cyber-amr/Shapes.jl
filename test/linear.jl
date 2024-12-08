@@ -185,6 +185,20 @@ end
     @test LineSegment((), ()) != Ray((), ())
 end
 
+@testset "flip(Linear)" begin
+    for i ∈ keys(linears)
+        L, l = getproperty(Shapes, i), getfield(linears, i)
+
+        @test flip(L((), ())) == L((), ())
+
+        for D ∈ 1:2
+            @test flip(l.original[D]) == l.flipped[D]
+            @test flip(l.degenerate[D]) == l.degenerate[D]
+            @test flip(flip(l.original[D])) == l.original[D]
+        end
+    end
+end
+
 @testset "distance(Linear)" begin
     for i ∈ keys(linears)
         L = getproperty(Shapes, i)

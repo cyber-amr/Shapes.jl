@@ -99,6 +99,9 @@ function Base.:(==)(a::Ray{D}, b::Ray{D}) where {D}
     a.point1 == b.point1 && iscollinear(a, b)
 end # Two rays are equal if the share the same origin (point1) and the same direction
 
+# flip(Linear)
+flip(l::L) where {L<:Linear} = L(l.point2, l.point1)
+
 # distance(Linear)
 
 distance(::Line) = Inf

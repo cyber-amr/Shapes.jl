@@ -22,7 +22,7 @@ export
     # Linear
     Linear, Line, LineSegment, Ray,
     # functions
-    distance², distance, normalize,
+    flip, distance², distance, normalize,
     iscollinear, isparallel, isdegenerate
 
 end

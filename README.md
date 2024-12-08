@@ -86,7 +86,8 @@ Transformations
 ├── extrude(Linear|Shape, Vector, [Taper])
 ├── bend(Linear|Shape, Vector)
 ├── twist(Linear|Shape, Vector)
-├── reflect(Linear|Shape, Shape)
+├── flip(Linear)
+├── reflect(Shape, Linear|Shape)
 └── shear(Linear|Shape, Shape)
 
 Mesurements
