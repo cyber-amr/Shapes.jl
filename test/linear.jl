@@ -53,10 +53,10 @@ for D ∈ 1:4
         push!(l.perpendicular, L((2, p1[D][2:end]...), (0, p2[D][2:end]...)))
         push!(l.skew, L(Tuple((i == 1 || i == D) ? 2 : p1[D][i] for i ∈ 1:D), (0, p2[D][2:end]...)))
 
-        push!(l.start_perpendicular, L(l.perpendicular[D].point1 .- 1, l.perpendicular[D].point2 .- 1))
-        push!(l.end_perpendicular, L(l.perpendicular[D].point1 .+ 1, l.perpendicular[D].point2 .+ 1))
-        push!(l.before_perpendicular, L(l.perpendicular[D].point1 .- 2, l.perpendicular[D].point2 .- 2))
-        push!(l.after_perpendicular, L(l.perpendicular[D].point1 .+ 1.5, l.perpendicular[D].point2 .+ 1.5))
+        push!(l.start_perpendicular, L(l.perpendicular[D].a .- 1, l.perpendicular[D].b .- 1))
+        push!(l.end_perpendicular, L(l.perpendicular[D].a .+ 1, l.perpendicular[D].b .+ 1))
+        push!(l.before_perpendicular, L(l.perpendicular[D].a .- 2, l.perpendicular[D].b .- 2))
+        push!(l.after_perpendicular, L(l.perpendicular[D].a .+ 1.5, l.perpendicular[D].b .+ 1.5))
 
         push!(l.contained, L(p1[D] .+ 0.5, p2[D] .- 0.5))
     end
@@ -99,8 +99,8 @@ end
 
         @test convert(L{2,Int}, l) === l
         @test convert(L{2,Float64}, l) isa L{2,Float64}
-        @test convert(L{2,Float64}, l).point1 === p1_floated[2]
-        @test convert(L{2,Float64}, l).point2 === p2_floated[2]
+        @test convert(L{2,Float64}, l).a === p1_floated[2]
+        @test convert(L{2,Float64}, l).b === p2_floated[2]
     end
 
     @test convert(Line{2,Int}, LineSegment((1.0, 2.0), (3.0, 4.0))) isa Line{2,Int}
