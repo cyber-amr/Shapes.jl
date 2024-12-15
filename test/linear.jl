@@ -175,6 +175,7 @@ end
         @test linears.LineSegment.original[D] != linears.LineSegment.contained[D]
 
         @test linears.Ray.original[D] != linears.Ray.flipped[D]
+        @test linears.Ray.original[D] != flip(linears.Ray.first_end[D])
         @test linears.Ray.original[D] != linears.Ray.extended_start[D]
         @test linears.Ray.original[D] == linears.Ray.extended_end[D]
         @test linears.Ray.original[D] != linears.Ray.contained[D]
