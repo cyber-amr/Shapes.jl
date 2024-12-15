@@ -96,8 +96,11 @@ function Base.:(==)(a::LineSegment{D}, b::LineSegment{D}) where {D}
     (a.a == b.a && a.b == b.b) || (a.a == b.b && a.b == b.a)
 end # Two segments are equal if they share the same endpoints
 function Base.:(==)(a::Ray{D}, b::Ray{D}) where {D}
-    a.a == b.a && iscollinear(a, b)
-end # Two rays are equal if the share the same origin (a) and the same direction
+    a.a == b.a && begin
+        va, vb = a.b .- a.a, b.b .- b.a
+        iscollinear(va, vb) && dot(va, vb) >= 0
+    end
+end # Two rays are equal if they share the same origin (a) and the same direction
 
 # flip(Linear)
 
